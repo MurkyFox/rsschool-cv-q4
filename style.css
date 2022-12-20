@@ -75,11 +75,7 @@ body {
     width: 100%;
     padding: 40px 25px 30px;
     background-color: rgba(78, 7, 7);
-  }
-
-  .section-languages {
-    width: 100%;
-  }
+  }  
 
   .profile-title {
     display: flex;
@@ -97,6 +93,18 @@ body {
     width: 250px;
     height: 250px;
     object-fit: contain;    
+  }
+
+  .project-link {
+    padding: 15px;
+    line-height: 50px;
+    text-decoration: none;
+    color: rgba(78, 7, 7, 0.6)
+  }
+  .project-link:hover {
+    color: rgba(255, 255, 255);        
+    background-color: rgba(78, 7, 7, 0.6);
+    transition: 1s;
   }
     
 /* FOOTER */
