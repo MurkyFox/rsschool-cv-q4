@@ -1,0 +1,146 @@
+/* BODY */
+
+body {
+    font-family: 'Anek Latin', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0);
+    min-height: 100vh;
+    margin: 0; padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  *   {
+    box-sizing: border-box;
+  }
+
+/* CONTAINER */
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+/* HEADER */
+  
+  .nav-list {
+    font-family: Kdam Thmor Pro, sans-serif;
+    font-size: 1.1em;    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-evenly;
+    list-style: none;
+    
+  }
+  
+  .nav-link {
+    padding: 15px;
+    line-height: 50px;
+    text-decoration: none;
+    transition-duration: 1s;
+  }
+  .nav-link:hover {
+    color: rgba(255, 255, 255);
+    text-decoration: underline;    
+    background-color: rgba(78, 7, 7, 0.6);    
+  }
+  
+  /* MAIN */
+  .name {
+    font-family: Kdam Thmor Pro, sans-serif;
+    font-size: 1.5em;
+  }
+
+  .main-container {    
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-between;        
+  }  
+  
+  .section {
+    margin: 10px;
+    padding: 15px 10px 10px;    
+    width: calc(50% - 30px);
+    border-bottom: 2px solid rgba(78, 7, 7, 0.6);
+  }
+
+  .section-profile {
+    color: rgba(255, 255, 255);
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 40px 25px 30px;
+    background-color: rgba(78, 7, 7);
+  }  
+
+  .profile-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .section-title {
+    margin-top: 0;
+    color: rgba(78, 7, 7);
+  }
+
+  .avatar {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;    
+  }
+
+  .project-link {
+    padding: 15px;
+    line-height: 50px;
+    text-decoration: none;
+    color: rgba(78, 7, 7, 0.6);
+    transition: 1s;
+  }
+  .project-link:hover {
+    color: rgba(255, 255, 255);        
+    background-color: rgba(78, 7, 7, 0.6);
+    transition: 1s;
+  }
+    
+/* FOOTER */
+
+  .footer-container {    
+    padding: 0px 20px 0px;
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .github {
+    position: relative;
+    padding-left: 40px;    
+  }
+
+  .github::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    background-image: url(../assets/img/Github.png);
+  }
+
+  html {
+    scroll-behavior: smooth; 
+  }
+    
+  @media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
